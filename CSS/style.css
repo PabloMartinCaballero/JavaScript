@@ -1,0 +1,86 @@
+/* reseteo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #525252;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* contenedor de header */
+.container {
+    margin: 5px;
+    color: white;
+    text-align: center;
+    background-color: black;
+    box-shadow: inset 0 0 5px red, 0 0 5px red;
+}
+
+/* titulo */
+.neon {
+font-family: 'Dancing Script', cursive;
+font-size: 50px;
+text-shadow: 0 0 5px red, 0 0 15px red , 0 0 30px red, 0 0 50px red;
+}
+
+.neon2 {
+font-family: 'Dancing Script', cursive;
+font-size: 25px;
+text-shadow: 0 0 5px yellow, 0 0 15px yellow , 0 0 30px yellow, 0 0 50px yellow;
+letter-spacing: 5px;
+}
+
+.flicker1 {
+    animation: parpadear 2s infinite backwards steps(3);
+}
+
+.flicker2 {
+    animation: parpadear 2.5s infinite backwards steps(4);
+}
+
+.flicker3 {
+    animation: parpadear 1.5s infinite backwards steps(2);
+}
+
+@keyframes parpadear {
+    to {
+        color: grey;
+        text-shadow: none;
+    }
+}
+
+.container1 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.subTitle{
+    text-align: center;
+}
+
+.paragraph{
+    text-align: center;
+}
+
+footer{
+    background-color: #414141;
+    margin-top: auto;
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.copy{
+    color: white;
+    padding-right: 20px;
+    align-items: center;
+}
